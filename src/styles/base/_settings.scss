@@ -1,6 +1,17 @@
+// Breakpoints
+$breakpoint-1: 480px;
+$breakpoint-2: 736px;
+$breakpoint-3: 980px;
+$breakpoint-4: 1280px;
+$breakpoint-5: 1690px;
+
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
-$desktop-breakpoint: 45rem;
+
+// Colors
+$dark-text: hsl(0, 0%, 13%);
+$grey-text: hsl(0, 0%, 29%);
+$light-grey-text: hsl(0, 0%, 45%);

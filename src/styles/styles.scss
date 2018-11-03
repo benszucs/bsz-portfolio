@@ -1,2 +1,10 @@
 @import './base/settings';
+@import './base/scale';
 @import './base/base';
+
+
+//components
+@import './components/grid';
+@import './components/navbar';
+@import './components/sidebar';
+@import './components/projects';

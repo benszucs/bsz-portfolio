@@ -1,0 +1,6 @@
+.project--link {
+  cursor: pointer;
+  &:hover {
+    color: $grey-text;
+  }
+}

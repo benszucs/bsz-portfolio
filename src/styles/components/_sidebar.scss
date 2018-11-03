@@ -1,0 +1,10 @@
+.sidebar {
+  width: 25%;
+}
+
+.view__sidebar {
+  display: flex;
+  flex-direction: row;
+  max-width: $breakpoint-4;
+  margin: 0 auto;
+}

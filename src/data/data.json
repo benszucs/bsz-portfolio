@@ -1,0 +1,76 @@
+{
+  "projectsArray": [
+    {
+      "title": "to-do-app",
+      "background": "project.png",
+      "subtitle": "This is a subtitle",
+      "demoLink": "https://to-do-bisz.herokuapp.com/",
+      "githubLink": "https://github.com/benszucs/to-do-app",
+      "tech": [
+        "react.jpg",
+        "react.jpg",
+        "react.jpg"
+      ]
+    },
+    {
+      "title": "quote-generator",
+      "background": "project.png",
+      "subtitle": "This is a subtitle",
+      "demoLink": "https://to-do-bisz.herokuapp.com/",
+      "githubLink": "https://github.com/benszucs/to-do-app",
+      "tech": [
+        "react.jpg",
+        "react.jpg",
+        "react.jpg"
+      ]
+    },
+    {
+      "title": "portfolio-v2",
+      "background": "project.png",
+      "subtitle": "This is a subtitle",
+      "demoLink": "https://to-do-bisz.herokuapp.com/",
+      "githubLink": "https://github.com/benszucs/to-do-app",
+      "tech": [
+        "react.jpg",
+        "react.jpg",
+        "react.jpg"
+      ]
+    },
+    {
+      "title": "portfolio-v1",
+      "background": "project.png",
+      "subtitle": "This is a subtitle",
+      "demoLink": "https://to-do-bisz.herokuapp.com/",
+      "githubLink": "https://github.com/benszucs/to-do-app",
+      "tech": [
+        "react.jpg",
+        "react.jpg",
+        "react.jpg"
+      ]
+    },
+    {
+      "title": "weather-app",
+      "background": "project.png",
+      "subtitle": "This is a subtitle",
+      "demoLink": "https://to-do-bisz.herokuapp.com/",
+      "githubLink": "https://github.com/benszucs/to-do-app",
+      "tech": [
+        "react.jpg",
+        "react.jpg",
+        "react.jpg"
+      ]
+    },
+    {
+      "title": "movie-app",
+      "background": "project.png",
+      "subtitle": "This is a subtitle",
+      "demoLink": "https://to-do-bisz.herokuapp.com/",
+      "githubLink": "https://github.com/benszucs/to-do-app",
+      "tech": [
+        "react.jpg",
+        "react.jpg",
+        "react.jpg"
+      ]
+    }
+  ]
+}
