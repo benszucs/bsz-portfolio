@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div>
+  <div className="content--container">
     <p>about page</p>
   </div>
 );

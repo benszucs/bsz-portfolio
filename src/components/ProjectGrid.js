@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link, HashRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+//
+// import Project from './pages/Project';
 
 
 const ProjectGrid = (props) => (
@@ -8,7 +10,9 @@ const ProjectGrid = (props) => (
       <div className="grid--item">
         <img className="grid--item__image" src={require('../assets/'+project.background)} alt=""/>
         <div className="grid--item__overlay">
-          <h2 className="project--link" onClick={() => props.handleProjectIndex(index)}>{project.title}</h2>
+          <h2 className="project--link" onClick={() => props.handleProjectIndex(index)}>
+            <Link to={`/projects`}>{project.title}</Link>
+          </h2>
           <p>{project.subtitle}</p>
           <div>
             <a href={project.demoLink} target="_blank">Demo</a>

@@ -1,18 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-const Links = () => (
+const Links = (props) => (
   <div>
     <ul>
-      <li>projects</li>
-      <li>to-do-app</li>
-      <li>quote-generator</li>
-      <li>portfolio-v2</li>
-      <li>portfolio-v1</li>
-      <li>weather-app</li>
-      <li>movie-app</li>
-      <li>about-me</li>
-      <li>contact</li>
+      <li><Link to="/" onClick={props.resetProjectIndex}>projects</Link></li>
+      {props.projects.projectsArray.map((project, index) => (
+        <li>
+          <Link onClick={() => props.handleProjectIndex(index)} to="/projects">{project.title}</Link>
+        </li>
+      ))}
+      <li><Link to="/about">about</Link></li>
+      <li><Link to="/contact">contact</Link></li>
     </ul>
   </div>
 );
