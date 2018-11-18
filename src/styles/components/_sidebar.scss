@@ -1,10 +1,19 @@
-.sidebar {
-  width: 25%;
-}
-
+// This class is added to all the pages so the Sidebar and whatever content is displayed, are next to each other
 .view__sidebar {
   display: flex;
   flex-direction: row;
   max-width: $breakpoint-4;
   margin: 0 auto;
+}
+
+.sidebar {
+  min-width: 25%;
+  text-align: center;
+  h2 {
+    margin: 0;
+  }
+}
+
+.sidebar--title {
+  margin: 50px 0;
 }

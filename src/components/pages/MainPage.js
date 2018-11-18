@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Media } from 'react-breakpoints';
 
 
@@ -15,13 +15,13 @@ class MainPage extends React.Component {
         {({ breakpoints, currentBreakpoint}) =>
           breakpoints[currentBreakpoint] > breakpoints.mobile ? (
             <div className="view__sidebar">
-              <Sidebar projects={this.props.projects} handleProjectIndex={this.props.handleProjectIndex}/>
-              <ProjectGrid projects={this.props.projects} handleProjectIndex={this.props.handleProjectIndex}/>
+              <Sidebar projects={this.props.projects}/>
+              <ProjectGrid projects={this.props.projects} handlePassIndex={this.props.handlePassIndex}/>
             </div>
           ) : (
             <div>
-              <Navigation projects={this.props.projects} handleProjectIndex={this.props.handleProjectIndex} />
-              <ProjectGrid projects={this.props.projects} handleProjectIndex={this.props.handleProjectIndex}/>
+              <Navigation projects={this.props.projects}/>
+              <ProjectGrid projects={this.props.projects} handlePassIndex={this.props.handlePassIndex}/>
             </div>
           )
         }

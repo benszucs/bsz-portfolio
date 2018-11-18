@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Media } from 'react-breakpoints';
 
 
@@ -16,12 +16,12 @@ class ContactPage extends React.Component {
           breakpoints[currentBreakpoint] > breakpoints.mobile ? (
             <div className="view__sidebar">
               <Sidebar projects={this.props.projects} handleProjectIndex={this.props.handleProjectIndex}/>
-              <Contact />
+              <Contact env={this.props.env}/>
             </div>
           ) : (
             <div>
               <Navigation projects={this.props.projects} handleProjectIndex={this.props.handleProjectIndex}/>
-              <Contact />
+              <Contact env={this.props.env}/>
             </div>
           )
         }

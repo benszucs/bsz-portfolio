@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(/home/benszucs/Documents/Coding/Heroku/portfolio/src/assets/fonts/Lato-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(/home/benszucs/Documents/Coding/Heroku/portfolio/src/assets/fonts/Roboto-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "QuattrocentoSans";
+  src: local("QuattrocentoSans"), url(/home/benszucs/Documents/Coding/Heroku/portfolio/src/assets/fonts/QuattrocentoSans-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: local("BebasNeue"), url(/home/benszucs/Documents/Coding/Heroku/portfolio/src/assets/fonts/BebasNeue-Regular.ttf) format("ttf");
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: $dark-text;
+}
+
+// h1, h2, h3, h4, h5 {
+//   font-family: "Lato", sans-serif;
+// }
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

@@ -36,6 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    .grid--item__overlay {
+      opacity: 1;
+    }
+  }
 }
 
 .grid--item__overlay {
@@ -51,9 +56,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  &:hover {
-    opacity: 1;
-  }
+
 }
 
 .grid--item__image {

@@ -4,6 +4,7 @@ import App from './App';
 import ReactBreakpoints from 'react-breakpoints';
 import 'normalize.css/normalize.css';
 import "./styles/styles.scss";
+import { env } from './config';
 
 const breakpoints = {
   mobile: 480,
@@ -15,7 +16,7 @@ const breakpoints = {
 
 ReactDOM.render(
   <ReactBreakpoints breakpoints={breakpoints}>
-    <App />
+    <App env={env} />
   </ReactBreakpoints>,
   document.getElementById('root')
 );

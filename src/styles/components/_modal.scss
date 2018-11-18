@@ -1,0 +1,36 @@
+.modal__close {
+  position: absolute;
+  font-size: $m-size;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.modal__links {
+  text-align: center;
+  margin-top: 50px;
+  ul {
+    font-size: $m-size;
+  }
+}
+
+
+
+// ################# if the social container was to be positioned absolutely at the bottom ########################
+// .modal--social-container {
+//   width: 100%;
+//   position: absolute;
+//   bottom: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   font-size: 2rem;
+//   padding: 30px 0;
+//   a {
+//     margin-right: 1.5rem;
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
