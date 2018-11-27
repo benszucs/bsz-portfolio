@@ -7,24 +7,24 @@ import { Link } from 'react-router-dom';
 const ProjectGrid = (props) => (
   <div className="grid">
     {props.projects.projectsArray.map((project, index) => (
+
       <div key={index} className="grid--item">
-        <img className="grid--item__image" src={require('../assets/'+project.background)} alt=""/>
-        <div className="grid--item__overlay">
-          <h2 onClick={() => props.handlePassIndex(index)} className="project--link">
+
+        <img className="grid--item__image" src={require('../assets/images/'+project.background)} alt=""/>
+
+        <div className="grid__overlay">
+          <h2 onClick={() => props.handlePassIndex(index)} className="grid__overlay--content">
             <Link className="title__color-trans" to={`/projects`}>{project.title}</Link>
           </h2>
-          <p>{project.subtitle}</p>
-          <div>
+
+          <div className="grid__overlay--content">
             <a href={project.demoLink} rel="noopener noreferrer" target="_blank">Demo</a>
             <a href={project.githubLink} rel="noopener noreferrer" target="_blank">Code</a>
           </div>
-          <div>
-            {project.tech.map((image, index) => (
-              <img key={index} className="grid--item__tech" src={require('../assets/'+image)} alt=""/>
-            ))}
-          </div>
         </div>
+
       </div>
+
     ))}
   </div>
 );
