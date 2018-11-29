@@ -1,7 +1,7 @@
 {
   "projectsArray": [
     {
-      "title": "bsz-portfolio",
+      "title": "PROJECT: BSZ",
       "background": "project.png",
       "demoLink": "https://bsz-portfolio.herokuapp.com/",
       "githubLink": "https://github.com/benszucs/bsz-portfolio",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "title": "to-do-app",
+      "title": "TO-DO APP",
       "background": "todo.png",
       "demoLink": "https://to-do-bisz.herokuapp.com/",
       "githubLink": "https://github.com/benszucs/to-do-app",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "title": "quote-generator",
+      "title": "QUOTE-GEN",
       "background": "quote.png",
       "demoLink": "https://bsz-quote-generator.herokuapp.com/",
       "githubLink": "https://github.com/benszucs/quote-generator",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "title": "movie-app",
+      "title": "MOVIE-APP",
       "background": "movie.png",
       "demoLink": "https://bsz-movie.herokuapp.com/",
       "githubLink": "https://github.com/benszucs/movie-react",

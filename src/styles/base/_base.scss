@@ -36,7 +36,8 @@ input, textarea {
 }
 
 // CSS Transitions
-.title__color-trans {
+
+.title__color-trans, a {
   color: $dark-text;
   transition: ease-in-out 150ms;
   &:hover {

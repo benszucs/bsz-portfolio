@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//
+import Eiffel from './icons/Eiffel.js';
+
 // import Project from './pages/Project';
 
 
@@ -9,19 +10,37 @@ const ProjectGrid = (props) => (
     {props.projects.projectsArray.map((project, index) => (
 
       <div key={index} className="grid--item">
+      <div className="grid--icon">
+        <Eiffel className="svg" fill="hsl(0, 0%, 13%)" />
+        <div className="moon"></div>
+      </div>
 
-        <img className="grid--item__image" src={require('../assets/images/'+project.background)} alt=""/>
 
-        <div className="grid__overlay">
-          <h2 onClick={() => props.handlePassIndex(index)} className="grid__overlay--content">
-            <Link className="title__color-trans" to={`/projects`}>{project.title}</Link>
-          </h2>
+      <div className="grid--title anim-title">
+        <Link
+          className="title__color-trans"
+          to={`/projects`}
+        >
+          <h3>{project.title}</h3>
+        </Link>
+      </div>
 
-          <div className="grid__overlay--content">
-            <a href={project.demoLink} rel="noopener noreferrer" target="_blank">Demo</a>
-            <a href={project.githubLink} rel="noopener noreferrer" target="_blank">Code</a>
-          </div>
-        </div>
+      <div className="grid--title anim-links">
+        <a
+          className="title__color-trans"
+          href={project.demoLink}
+          rel="noopener noreferrer"
+        >
+          <h3>Demo</h3>
+        </a>
+        <a
+          className="title__color-trans"
+          href={project.githubLink}
+          rel="noopener noreferrer"
+        >
+          <h3>Code</h3>
+        </a>
+      </div>
 
       </div>
 

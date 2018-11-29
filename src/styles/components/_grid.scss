@@ -1,3 +1,4 @@
+
 .grid {
   flex-grow: 1;
   display: grid;
@@ -24,55 +25,27 @@
   grid-column: 1 / 1;
 }
 
-/* Just to make the grid visible */
-
+/*  to make the grid visible */
 .grid > * {
-  background: rgba(0,0,0,0.1);
   border: 1px white solid;
 }
-
+//
 .grid--item {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  &:hover {
-    .grid__overlay {
-      z-index: 1;
-      background: rgba(255,255,255,0.8);
-    }
-    .grid__overlay--content {
-      opacity: 1 !important;
-    }
-  }
-}
-
-.grid__overlay {
-  // dimensions
-  width: 85%;
-  height: 85%;
-
-  // positioning
-  position: absolute;
-  top: 50;
-  left: 50%;
-  transform: translate(-50%, 0);
-
-  // content positioning
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  transition: ease-in-out 0.1s;
-  background: rgba(255,255,255,0);
-}
-
-
-.grid__overlay > h2, div {
-  z-index: 2;
-  opacity: 1;
+  background: hsl(0, 0%, 95%)
+  // &:hover {
+  //   .grid__overlay {
+  //     z-index: 1;
+  //     background: rgba(255,255,255,0.8);
+  //   }
+  //   .grid__overlay--content {
+  //     opacity: 1 !important;
+  //   }
+  // }
 }
 
 .grid--item__image {
@@ -80,7 +53,67 @@
   width: 100%;
 }
 
-.grid__overlay--content {
-  transition: ease-in-out 0.1s;
-  opacity: 0 !important;
+.grid--icon {
+  position: relative;
+  width: 40%;
+  z-index: 0;
 }
+
+.moon {
+  background: red;
+  position: absolute;
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  top: 12%;
+  left: 35%;
+  z-index: -1;
+}
+
+//title effect
+.grid--title {
+  position: absolute;
+  top: 20%;
+}
+
+.anim-links {
+  display: flex;
+  & a:first-child {
+    margin-right: 10px;
+  }
+}
+
+//
+// .grid__overlay {
+//   // dimensions
+//   width: 85%;
+//   height: 85%;
+//
+//   // positioning
+//   position: absolute;
+//   top: 50;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+//
+//   // content positioning
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//
+//   transition: ease-in-out 0.1s;
+//   background: rgba(255,255,255,0);
+// }
+//
+//
+// .grid__overlay > h2, div {
+//   z-index: 2;
+//   opacity: 1;
+// }
+//
+
+//
+// .grid__overlay--content {
+//   transition: ease-in-out 0.1s;
+//   opacity: 0 !important;
+// }
