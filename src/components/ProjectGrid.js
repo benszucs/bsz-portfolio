@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Eiffel from './icons/Eiffel.js';
+
+//ICONS
+import BSZLogo from './icons/BSZLogo.js';
+import YellowMoon from './icons/YellowMoon.js';
+import BlueMoon from './icons/BlueMoon.js';
+import ToDoIcon from './icons/ToDoIcon';
 
 // import Project from './pages/Project';
 
@@ -13,10 +18,21 @@ export default class ProjectGrid extends Component {
         {this.props.projects.projectsArray.map((project, index) => (
 
           <div key={index} className="grid--item">
-          <div className="grid--icon">
-            <Eiffel className="svg" fill="hsl(0, 0%, 13%)" />
-            <div className="moon"></div>
-          </div>
+
+            {index === 0 &&
+              <div className="grid--icon">
+                <div className="bsz-logo"><BSZLogo /></div>
+                <div className="bsz-yellow-moon"><YellowMoon /></div>
+                <div className="bsz-blue-moon"><BlueMoon /></div>
+              </div>
+            }
+
+            {index === 1 &&
+              <div className="grid--icon">
+                <ToDoIcon />
+              </div>
+            }
+
 
           <div className="grid--title-container">
             <div className="grid--title anim-title">
@@ -43,6 +59,10 @@ export default class ProjectGrid extends Component {
               >
                 <h3>Code</h3>
               </a>
+            </div>
+
+            <div className="grid--title anim-title-appear">
+              <h3>{project.title}</h3>
             </div>
           </div>
 

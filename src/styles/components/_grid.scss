@@ -29,7 +29,9 @@
 .grid > * {
   border: 1px white solid;
 }
-//
+
+
+// Styling for the overlay
 .grid--item {
   position: relative;
   display: flex;
@@ -39,60 +41,37 @@
   background: hsl(0, 0%, 95%);
 }
 
-.grid--item__image {
-  min-height: 100%;
-  width: 100%;
-}
-
 .grid--icon {
   position: relative;
-  width: 40%;
+  width: 60%;
   z-index: 0;
-  cursor: pointer;
-  &:hover {
-    fill: $light-grey-text !important;
-  }
 }
 
-.moon {
-  background: red;
-  position: absolute;
-  border-radius: 50%;
-  width: 10%;
-  height: 10%;
-  top: 12%;
-  left: 35%;
-  z-index: -1;
-}
-
-//title effect
+// Title animation effects
 .grid--title-container {
-  width: 50%;
-  height: 10%;
   position: absolute;
-  bottom: 5%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  font-size: 90%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .grid--title {
   position: absolute;
-  bottom: 50%;
-
-  font-size: 90%;
-  transition: ease-in-out 0.25s;
-  & h3 {
-      display: block;
-      margin-block-start: 0;
-      margin-block-end: 0;
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-  }
 }
 
-
+.grid--title h3 {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
 
 .anim-links {
   // Alignment of links
@@ -100,54 +79,29 @@
   & a:first-child {
     margin-right: 10px;
   }
+}
+
+.anim-title-appear {
   opacity: 0;
-  transform: translateY(-30px);
+  top: 0%;
+  transition: ease-in-out 0.40s;
 }
 
-.grid--title-container {
-  &:hover {
-    .anim-title {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    .anim-links {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+.anim-title {
+  bottom: 10%;
+  transition: ease-in-out 0.30s;
 }
 
-//
-// .grid__overlay {
-//   // dimensions
-//   width: 85%;
-//   height: 85%;
-//
-//   // positioning
-//   position: absolute;
-//   top: 50;
-//   left: 50%;
-//   transform: translate(-50%, 0);
-//
-//   // content positioning
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//
-//   transition: ease-in-out 0.1s;
-//   background: rgba(255,255,255,0);
-// }
-//
-//
-// .grid__overlay > h2, div {
-//   z-index: 2;
-//   opacity: 1;
-// }
-//
+.anim-links {
+  opacity: 0;
+  bottom: 20%;
+  transition: ease-in-out 0.30s;
+}
 
-//
-// .grid__overlay--content {
-//   transition: ease-in-out 0.1s;
-//   opacity: 0 !important;
-// }
+
+.grid--item:hover {
+  cursor: pointer;
+  .anim-title-appear {top: 10%; opacity: 1;}
+  .anim-title {bottom: 0%; opacity: 0;}
+  .anim-links {bottom: 10%; opacity: 1;}
+}
