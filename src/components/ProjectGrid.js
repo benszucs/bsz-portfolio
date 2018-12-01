@@ -6,6 +6,8 @@ import BSZLogo from './icons/BSZLogo.js';
 import YellowMoon from './icons/YellowMoon.js';
 import BlueMoon from './icons/BlueMoon.js';
 import ToDoIcon from './icons/ToDoIcon';
+import QuoteGenIcon from './icons/QuoteGenIcon';
+import MovieIcon from './icons/MovieIcon';
 
 // import Project from './pages/Project';
 
@@ -30,6 +32,18 @@ export default class ProjectGrid extends Component {
             {index === 1 &&
               <div className="grid--icon">
                 <ToDoIcon />
+              </div>
+            }
+
+            {index === 2 &&
+              <div className="grid--icon">
+                <QuoteGenIcon />
+              </div>
+            }
+
+            {index === 3 &&
+              <div className="grid--icon">
+                <MovieIcon />
               </div>
             }
 
