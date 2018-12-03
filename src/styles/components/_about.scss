@@ -1,0 +1,52 @@
+// ABOUT grid layout
+.about-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
+  align-items: center;
+}
+
+.about-grid-item {
+  // background: hsl(0, 0%, 90%)
+}
+
+@media only screen and (min-width: 435px) {
+  .about-grid {
+    grid-template-columns: 1fr 3fr;
+  }
+  .about-grid-item:last-child {
+    grid-column: 1/3;
+  }
+}
+
+//Other styling on About page
+.about-image {
+  width: 220px;
+  border-radius: 50%;
+}
+
+.about-skills-container {
+  padding: $m-size;
+}
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & span {
+    // align-self: center;
+    // justify-self: center;
+    white-space: nowrap;
+    border: 1px solid;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+}
+
+.about-skills-title {
+  text-align: center;
+}
