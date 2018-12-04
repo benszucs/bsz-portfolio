@@ -23,46 +23,50 @@ export default class ProjectGrid extends Component {
               <div key={index} className="grid--item Tilt-inner">
 
                 {index === 0 &&
-                  <div className="grid--icon">
-                    <div className="bsz-logo"><BSZLogo /></div>
-                    <div className="bsz-yellow-moon"><YellowMoon /></div>
-                    <div className="bsz-blue-moon"><BlueMoon /></div>
-                  </div>
+                  <Link to="/projects" className="grid--icon">
+                    <div>
+                      <div className="bsz-logo"><BSZLogo /></div>
+                      <div className="bsz-yellow-moon"><YellowMoon /></div>
+                      <div className="bsz-blue-moon"><BlueMoon /></div>
+                    </div>
+                  </Link>
                 }
 
                 {index === 1 &&
-                  <div className="grid--icon">
-                    <ToDoIcon />
-                  </div>
+                  <Link to="/projects" className="grid--icon">
+                    <div>
+                      <ToDoIcon />
+                    </div>
+                  </Link>
                 }
 
                 {index === 2 &&
-                  <div className="grid--icon">
-                    <QuoteGenIcon />
-                  </div>
+                  <Link to="/projects" className="grid--icon">
+                    <div>
+                      <QuoteGenIcon />
+                    </div>
+                  </Link>
                 }
 
                 {index === 3 &&
-                  <div className="grid--icon">
-                    <MovieIcon />
-                  </div>
+                  <Link to="/projects" className="grid--icon">
+                    <div>
+                      <MovieIcon />
+                    </div>
+                  </Link>
                 }
 
 
               <div className="grid--title-container">
                 <div className="grid--title anim-title">
-                  <Link
-                    className="title__color-trans"
-                    to={`/projects`}
-                  >
-                    <h3>{project.title}</h3>
-                  </Link>
+                  <h3>{project.title}</h3>
                 </div>
 
                 <div className="grid--title anim-links">
                   <a
                     className="title__color-trans"
                     href={project.demoLink}
+                    target='_blank'
                     rel="noopener noreferrer"
                   >
                     <h3>Demo</h3>
@@ -70,6 +74,7 @@ export default class ProjectGrid extends Component {
                   <a
                     className="title__color-trans"
                     href={project.githubLink}
+                    target='_blank'
                     rel="noopener noreferrer"
                   >
                     <h3>Code</h3>
@@ -77,7 +82,9 @@ export default class ProjectGrid extends Component {
                 </div>
 
                 <div className="grid--title anim-title-appear">
-                  <h3>{project.title}</h3>
+                  <Link to='/projects' className="title__color-trans">
+                    <h3>{project.title}</h3>
+                  </Link>
                 </div>
               </div>
 

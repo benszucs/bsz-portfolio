@@ -1,22 +1,40 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ben from '../assets/images/ben.png';
+import Tilt from 'react-tilt';
+
 
 const About = () => (
   <div className="page--container">
     <h1 className="page--title">ABOUT</h1>
     <div className="about-grid">
       <div className="about-grid-item">
-        <img
-          className="about-image"
-          src={ben}
-          alt="Photo of Ben"
-        />
+        <Tilt className="Tilt" options={{ max: 15, scale: 1.05 }} style={{ height: "80%", width: "80%" }}>
+          <img
+            className="about-image Tilt-inner"
+            src={ben}
+            alt="Photo of Ben"
+          />
+        </Tilt>
       </div>
 
-      <div className="about-grid-item">
-        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
-        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+      <div className="about-grid-item about-me">
+        <p>Hi, my name is Ben. I am a Front-End Developer, UX Enthusiast and Professional Googler.</p>
+        <p>I started my journey as a self-taught developer shortly after graduating from University, when I stumbled upon HTML & CSS. What started out as a hobby, turned into a full-time obsession.</p>
+        <p>In Front-End Development I have found a field that I am truly passionate about, where I can utilise my creativity and problem solving skills to synthesise design and development, bringing innovative concepts to life.</p>
+        <p>I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects.</p>
+        <p>Confident in my ability to learn new technologies quickly, which is possibly the most valuable thing I can provide any company.</p>
       </div>
+
+      <Link
+        className="link__color-trans"
+        to="/contact"
+      >
+        <button className="button about-button">
+          Mould me to your stack
+        </button>
+      </Link>
+
 
       <div className="about-grid-item">
         <div className="about-skills-container">

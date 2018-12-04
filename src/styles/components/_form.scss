@@ -1,6 +1,10 @@
 .form {
   width: 65%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   li {
     margin-bottom: 0;
   }
@@ -43,21 +47,11 @@
   height: 200px;
 }
 
-.form--button {
-  font-weight: 600;
-  font-size: 100%;
-  border: none;
-  border-radius: 5px;
-  padding: 0.75rem 3rem;
-  background: $dark-text;
-  color: white;
-  margin-bottom: 1rem;
-  cursor: pointer;
-  &:active {
-    transform: translate(1px, 1px);
-  }
-}
-
 ::placeholder {
   color: hsl(0, 0%, 75%);
+}
+
+.form--button {
+  width: 40%;
+  margin: 0 auto;
 }

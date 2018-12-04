@@ -152,11 +152,9 @@ export default class ContactForm extends React.Component {
             />
           </li>
           <li className="form--error-message">{this.state.errors.message}</li>
-          <li>
-            <button className="form--button" type="submit">Submit</button>
-          </li>
           <li>{this.state.formSubmitted && 'Email sent'}</li>
         </ul>
+        <button className="button form--button" type="submit">Submit</button>
       </form>
     )
   }

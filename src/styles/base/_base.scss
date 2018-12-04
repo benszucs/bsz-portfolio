@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 5vw;
+}
+
 h1 {
   font-weight: 400;
 }
@@ -35,9 +39,30 @@ input, textarea {
 	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
 }
 
+// Random Styles
+.dark-text {
+  color: $dark-text;
+}
+
+// Button
+.button {
+  font-weight: 600;
+  font-size: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 3rem;
+  background: $dark-text;
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  &:active {
+    transform: translate(1px, 1px);
+  }
+}
+
 // CSS Transitions
 
-.title__color-trans, a {
+.title__color-trans {
   color: $dark-text;
   transition: ease-in-out 150ms;
   &:hover {
