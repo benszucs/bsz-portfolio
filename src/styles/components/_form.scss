@@ -40,7 +40,8 @@
   padding: 0.5rem;
   margin-bottom: 0.25rem;
   color: $dark-text;
-
+  transition: 100ms;
+  &:hover {border: solid 1px $dark-text}
 }
 
 .form--message {

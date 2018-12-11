@@ -1,7 +1,6 @@
 import React from 'react';
 import { Media } from 'react-breakpoints';
 
-
 //Components
 import Navigation from '../Navigation';
 import Project from '../Project';
@@ -9,7 +8,6 @@ import Sidebar from '../Sidebar';
 
 
 class DisplayProject extends React.Component {
-
   render() {
     return(
       <Media>

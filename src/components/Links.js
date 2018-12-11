@@ -17,13 +17,13 @@ const Links = (props) => (
       <li><Link className="link__color-trans" to="/contact">contact</Link></li>
     </ul>
     <div className="link--social-container">
-      <a href="https://www.instagram.com/">
+      <a href="https://github.com/benszucs/">
         <FontAwesomeIcon className="link__color-trans" icon={['fab', 'github-alt']} />
       </a>
-      <a href="https://www.instagram.com/">
+      {/* <a href="https://www.instagram.com/">
         <FontAwesomeIcon className="link__color-trans" icon={['fab', 'linkedin-in']} />
-      </a>
-      <a href="https://www.instagram.com/">
+      </a> */}
+      <a href="/">
         <FontAwesomeIcon className="link__color-trans" icon={['fas', 'id-card']} />
       </a>
     </div>

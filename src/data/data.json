@@ -8,22 +8,16 @@
       "tech": [
         "HTML",
         "CSS",
+        "JavaScript",
         "Sass",
         "React",
         "Heroku"
       ],
-      "userStories": [
-        "The user can hover on a tile to look at the project in more detail/launch a demo of the project/open the code on GitHub",
-        "In the 'projects' view, the user can navigate between all the projects using the arrows",
-        "The user can navigate to the about page",
-        "The user can navigate to the contact page and send an email using the form",
-        "The user can follow links to the author's GitHub/LinkedIn/CV"
-      ],
+      "userStories": [],
       "description": [
-        "I designed and developed this fully responsive webapp in React, utilising various npm libraries like React-Router, React-Breakpoints to achieve this layout. The contact form uses EmailJS to handle outgoing emails, so no back-end was needed for this project.",
-        "I wanted to make a webapp where I could showcase my personal projects that I have been working on, without the hassle of manually making new pages on a static website.",
-        "Naturally React's reusable components were a perfect fit. I can just add the details of new projects to the data.json file and the app will render the new projects, already styled and functional.",
-        "To host the site on Heroku I used a create-react-app buildpack."
+        "I designed and developed this fully responsive webapp in React, utilising various npm libraries like React-Router, React-Breakpoints to achieve this layout. The contact form uses EmailJS to handle outgoing emails, so no back-end was set up for this project.",
+        "I wanted to make a site where I could showcase my personal projects that I have been working on, without the hassle of manually making new pages on a static website.",
+        "Half way through the project I discovered a more effective way to make every part of the app editable through a CMS system. If I was to remake this website, I would utilise Gatsby.js and Netlify CMS to make the every part of the application editable."
       ]
     },
     {
@@ -35,6 +29,7 @@
         "HTML",
         "CSS",
         "Sass",
+        "JavaScript",
         "React.js",
         "Express",
         "Webpack",
@@ -48,11 +43,7 @@
         "The user can clear the list",
         "The user can reset the original state"
       ],
-      "description": [
-        "After finishing the React track of Andrew Mead's Udemy course I put the newly learnt concept to the test by building this to-do app.",
-        "The main objective of this project was to practice building things like filtering and CRUD functionality in React.",
-        "Didn't use create-react-app for this project, the app is bundled together using Webpack and is hosted on Heroku, for which I built a simple server using Node.js"
-      ],
+      "description": [],
       "otherLinks": [
         ["Udemy", "https://www.udemy.com/react-2nd-edition/"]
       ]
@@ -65,6 +56,7 @@
       "tech": [
         "HTML",
         "CSS",
+        "JavaScript",
         "React.js",
         "Heroku"
       ],
@@ -72,9 +64,7 @@
         "The user can generate quotes from API (quote, author)",
         "The user can share quotes on Twitter"
       ],
-      "description": [
-        "Following the Quote generator brief on FreeCodeCamp.org I built this simple Random Quote Generator in React that uses a quote API to fetch data."
-      ],
+      "description": [],
       "otherLinks": [
         ["Brief", "https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine"],
         ["API", "https://talaikis.com/random_quotes_api/"]
@@ -96,10 +86,7 @@
         "The user can search for movies by entering year",
         "The user can navigate through the top 10 movies in a given year"
       ],
-      "description": [
-        "One of the first standalone applications I built to familiarise myself with the basics of React and also learn how to use APIs to get and display data.",
-        "The app very simply renders movies for a given year by accessing the TMDB API. The year is selected by the user."
-      ],
+      "description": [],
       "otherLinks": [
         ["API", "https://www.themoviedb.org/documentation/api"]
       ]

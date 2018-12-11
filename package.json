@@ -52,6 +52,7 @@
     "react-breakpoints": "^3.0.3",
     "react-dev-utils": "^6.0.4",
     "react-dom": "^16.5.2",
+    "react-icons": "^3.2.2",
     "react-modal": "^3.6.1",
     "react-router-dom": "^4.3.1",
     "react-tilt": "^0.1.4",

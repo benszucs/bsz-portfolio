@@ -13,13 +13,13 @@ const About = () => (
           <img
             className="about-image Tilt-inner"
             src={ben}
-            alt="Photo of Ben"
+            alt="Ben"
           />
         </Tilt>
       </div>
 
       <div className="about-grid-item about-me">
-        <p>Hi, my name is Ben. I am a Front-End Developer, UX Enthusiast and Professional Googler.</p>
+        <p>Hi I'm Ben. Front-End Developer, UX Enthusiast and Professional Googler.</p>
         <p>I started my journey as a self-taught developer shortly after graduating from University, when I stumbled upon HTML & CSS. What started out as a hobby, turned into a full-time obsession.</p>
         <p>In Front-End Development I have found a field that I am truly passionate about, where I can utilise my creativity and problem solving skills to synthesise design and development, bringing innovative concepts to life.</p>
         <p>I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects.</p>
@@ -48,18 +48,22 @@ const About = () => (
             <span>Git</span>
             <span>React</span>
             <span>Redux</span>
+            <span>Garsby.js</span>
+            <span>GraphQl</span>
             <span>Command Line</span>
             <span>npm/yarn</span>
             <span>Webpack</span>
-            <span>Babel</span>
+            {/* <span>Babel</span>
             <span>JSON</span>
             <span>AJAX</span>
-            <span>XML</span>
+            <span>XML</span> */}
             <span>Bootstrap</span>
             <span>jQuery</span>
             <span>Heroku</span>
             <span>Node.js</span>
             <span>Express</span>
+            <span>Adobe Illustrator</span>
+            <span>Adobe Photoshop</span>
             <span>Mobile First</span>
             <span>Cross Browser</span>
           </div>
